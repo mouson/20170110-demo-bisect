@@ -48,4 +48,19 @@ class DoubleSequenceCalculatorTest extends TestCase
         /** Assert */
         $this->assertEquals($expected, $actual);
     }
+
+    public function test_測試雙倍數列輸入負數應回傳兩倍負數()
+    {
+        /** Arrange */
+        $target = new DoubleSequenceCalculator();
+        $value  = -2;
+        /** Assume */
+        $expected = -4;
+
+        /** Act */
+        $actual = $target->calculate($value);
+
+        /** Assert */
+        $this->assertEquals($expected, $actual);
+    }
 }
