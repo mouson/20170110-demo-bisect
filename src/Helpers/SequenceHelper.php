@@ -9,8 +9,6 @@
 namespace Mouson\Helpers;
 
 use Mouson\Helpers\SequenceCalculator\CalculatorInterface;
-use Mouson\Helpers\SequenceCalculator\FibonacciSequenceCalculator;
-use Mouson\Helpers\SequenceCalculator\PadovanSequenceCalculator;
 
 class SequenceHelper
 {
