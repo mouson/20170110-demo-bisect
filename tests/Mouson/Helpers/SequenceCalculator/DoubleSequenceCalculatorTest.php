@@ -55,7 +55,22 @@ class DoubleSequenceCalculatorTest extends TestCase
         $target = new DoubleSequenceCalculator();
         $value  = -2;
         /** Assume */
-        $expected = -4;
+        $expected = 4;
+
+        /** Act */
+        $actual = $target->calculate($value);
+
+        /** Assert */
+        $this->assertEquals($expected, $actual);
+    }
+
+    public function test_測試大數字應正確回傳兩倍數()
+    {
+        /** Arrange */
+        $target = new DoubleSequenceCalculator();
+        $value  = 100000;
+        /** Assume */
+        $expected = 200000;
 
         /** Act */
         $actual = $target->calculate($value);
