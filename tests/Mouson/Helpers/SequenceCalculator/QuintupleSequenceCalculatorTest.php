@@ -34,4 +34,19 @@ class QuintupleSequenceCalculatorTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
+    public function test_測試雙倍數列輸入2應回傳4()
+    {
+        /** Arrange */
+        $target = new QuintupleSequenceCalculator();
+        $value  = 2;
+        /** Assume */
+        $expected = 10;
+
+        /** Act */
+        $actual = $target->calculate($value);
+
+        /** Assert */
+        $this->assertEquals($expected, $actual);
+    }
+
 }
