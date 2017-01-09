@@ -16,12 +16,15 @@ class SequenceHelper
      * @param $algorithm
      *
      * @return CalculatorInterface
+     * @throws \Exception
      */
     static public function make($algorithm)
     {
         $helper = 'Mouson\\Helpers\\SequenceCalculator\\' . $algorithm .
                   "SequenceCalculator";
-
+        if (! class_exists($helper)) {
+            throw new \Exception('Class Not Found!!');
+        }
         return new $helper;
     }
 }
