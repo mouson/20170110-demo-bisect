@@ -12,5 +12,8 @@
         "psr-4": {
             "Mouson\\Helpers\\": "src\\Helpers"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
     }
 }
